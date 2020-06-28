@@ -8,7 +8,7 @@ To overcome this issue, we have developed a lightweight library named Paip that 
 For example, we have a data frame, `X` that needs to go through two feature transformations, i.e. `transformer1` and `transformer2`. In between the transformers, we need to rename the column, "x1" to "x1_new". The code is presented in the following.
 
 ```python
-from paip import paip
+from paipline import Paip
 
 # Somewhere here, we have created the data frame, `X`.
 # Somewhere here, we have created feature transformation, named `transformer1`.
@@ -58,4 +58,8 @@ And to serialize Paip, we use the existing joblib.
 import joblib
 joblib('./test.paip', paip1)
 
+```
+To install package with PyPi:
+```bash
+pip install paipline-zkchong
 ```
