@@ -1,4 +1,4 @@
-# What is Paip? And Why Paip?
+# What is Paip? 
 "Paip" is a Malay word of "pipe", a lightweight library that is alternative to Scikit Learn pipeline. 
 
 In general, Scikit Learn's pipeline facilitates the chaining of transformers in series and execute them in sequential order. Then, the pipeline can be serialized and re-used easily at different environment. However, the existing Scikit Learn's pipeline only allows objects to be loaded into the step list. If there is a small piece of code that is needed in between transformers (e.g. change of column name of data frame), we need to revise the small piece of code into object-oriented paradigm in order to obtain the corresponding objects. Need less to say, the class definition has to be imported at the new environment during the unpicke process. 
